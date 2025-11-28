@@ -1,0 +1,25 @@
+--cpu Cortex-M3
+"uartrxinterrupt\startup_stm32f103xb.o"
+"uartrxinterrupt\main.o"
+"uartrxinterrupt\stm32f1xx_it.o"
+"uartrxinterrupt\stm32f1xx_hal_msp.o"
+"uartrxinterrupt\stm32f1xx_hal_gpio_ex.o"
+"uartrxinterrupt\stm32f1xx_hal_i2c.o"
+"uartrxinterrupt\stm32f1xx_hal.o"
+"uartrxinterrupt\stm32f1xx_hal_rcc.o"
+"uartrxinterrupt\stm32f1xx_hal_rcc_ex.o"
+"uartrxinterrupt\stm32f1xx_hal_gpio.o"
+"uartrxinterrupt\stm32f1xx_hal_dma.o"
+"uartrxinterrupt\stm32f1xx_hal_cortex.o"
+"uartrxinterrupt\stm32f1xx_hal_pwr.o"
+"uartrxinterrupt\stm32f1xx_hal_flash.o"
+"uartrxinterrupt\stm32f1xx_hal_flash_ex.o"
+"uartrxinterrupt\stm32f1xx_hal_exti.o"
+"uartrxinterrupt\stm32f1xx_hal_tim.o"
+"uartrxinterrupt\stm32f1xx_hal_tim_ex.o"
+"uartrxinterrupt\stm32f1xx_hal_uart.o"
+"uartrxinterrupt\system_stm32f1xx.o"
+--strict --scatter "UARTRXInterrupt\UARTRXInterrupt.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "UARTRXInterrupt.map" -o UARTRXInterrupt\UARTRXInterrupt.axf
